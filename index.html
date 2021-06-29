@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+</head>
+
+<body>
+
+    <section class="section">
+
+        <div class="container">`
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title is-centered">
+                                Ping-pong Score Keeper
+                            </p>
+
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="card-image">
+                                    <figure class="image is-5by3">
+                                        <img src="images/Ping-pong.jpg" alt="Placeholder image">
+                                    </figure>
+                                    <label for="playto" class="label is-large is-inline is-centered">Playing to
+                                        point</label>
+                                    <div class="select is-rounded is-centered">
+                                        <select name="" id="playto">
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                        </select>
+                                    </div>
+                                    <h1 class="is-size-1 is-family-monospace has-text-centered"> <span
+                                            id="p1Display">0</span>
+                                        to <span id="p2Display">0</span></h1>
+
+                                    <p class="subtitle has-text-centered"> Use the button below to keep score</p>
+
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <button id="p1Button" class="is-primary button card-header-title is-medium">+1 Player
+                                    One</button>
+                                <button id="reset" class="is-danger button card-header-title is-medium">Reset</button>
+                                <button id="p2Button" class="is-primary button card-header-title is-medium">+1 Player
+                                    Two</button>
+
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Just simple Score Keeper using CSS Framework <strong> <a href="https://bulma.io/">Bulma</a> </strong>,
+                nothing more.
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
